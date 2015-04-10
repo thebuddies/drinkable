@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drinkable.Web", "src\Drinka
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drinkable.Api", "src\Drinkable.Api\Drinkable.Api.csproj", "{74DF0572-F8DB-418A-8F36-87954D2BB28C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drinkable.Tests", "test\Drinkable.Tests\Drinkable.Tests.csproj", "{C56721D3-4DF5-4E9B-AE93-A05298DE79DB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{74DF0572-F8DB-418A-8F36-87954D2BB28C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74DF0572-F8DB-418A-8F36-87954D2BB28C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74DF0572-F8DB-418A-8F36-87954D2BB28C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C56721D3-4DF5-4E9B-AE93-A05298DE79DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C56721D3-4DF5-4E9B-AE93-A05298DE79DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C56721D3-4DF5-4E9B-AE93-A05298DE79DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C56721D3-4DF5-4E9B-AE93-A05298DE79DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
