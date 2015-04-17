@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drinkable.Common", "src\Dri
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drinkable.Core", "src\Drinkable.Core\Drinkable.Core.csproj", "{90C13529-74A4-4F57-B2FD-22C07651A348}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drinkable.Contracts", "src\Drinkable.Contracts\Drinkable.Contracts.csproj", "{78D34A14-9E99-407E-8D28-3B72A035FE47}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drinkable.Data", "src\Drinkable.Data\Drinkable.Data.csproj", "{ACDA68B6-4878-4A0C-AB4E-E16D49A1B9DF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drinkable.Models", "src\Drinkable.Models\Drinkable.Models.csproj", "{E9DE25D8-2107-45A4-B951-07139C15AF33}"
@@ -37,10 +35,6 @@ Global
 		{90C13529-74A4-4F57-B2FD-22C07651A348}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90C13529-74A4-4F57-B2FD-22C07651A348}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90C13529-74A4-4F57-B2FD-22C07651A348}.Release|Any CPU.Build.0 = Release|Any CPU
-		{78D34A14-9E99-407E-8D28-3B72A035FE47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{78D34A14-9E99-407E-8D28-3B72A035FE47}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{78D34A14-9E99-407E-8D28-3B72A035FE47}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{78D34A14-9E99-407E-8D28-3B72A035FE47}.Release|Any CPU.Build.0 = Release|Any CPU
 		{ACDA68B6-4878-4A0C-AB4E-E16D49A1B9DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{ACDA68B6-4878-4A0C-AB4E-E16D49A1B9DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ACDA68B6-4878-4A0C-AB4E-E16D49A1B9DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
