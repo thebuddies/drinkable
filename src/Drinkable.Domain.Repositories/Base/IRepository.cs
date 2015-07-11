@@ -24,5 +24,7 @@ namespace Drinkable.Domain.Repositories.Base
         void Delete(TEntity entity);
 
         void DeleteById(TKey id);
+
+        long Count();
     }
 }

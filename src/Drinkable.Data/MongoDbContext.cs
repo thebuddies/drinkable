@@ -1,5 +1,5 @@
 ﻿using Drinkable.Data.Contracts;
-using Drinkable.Domain.Entities;
+using Drinkable.Utilities;
 using MongoDB.Driver;
 
 namespace Drinkable.Data
@@ -8,11 +8,16 @@ namespace Drinkable.Data
     {
         public MongoDbContext()
         {
+            var connectionStringResolver = new ConnectionStringResolver();
+            string connectionString = connectionStringResolver.Resolve("Drinkable.Local");
 
+            var mongoDbMappings = new MongoDbMappings();
+            mongoDbMappings.InitialiseMappings();
+
+            IMongoClient client = new MongoClient(connectionString);
+            MongoDatabase = client.GetDatabase("test");
         }
 
         public IMongoDatabase MongoDatabase { get; set; }
-
-        public IMongoCollection<User> Users { get; set; }
     }
 }

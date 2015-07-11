@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Drinkable.Data.Repositories
 {
-    public class UserRepository : MongoDbRepository<User>, IUserRepository<User, string>
+    public class UserRepository : GenericRepository<User>, IUserRepository<User, string>
     {
         public UserRepository(IMongoDbContext context)
             : base(context)

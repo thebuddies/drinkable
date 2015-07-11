@@ -3,8 +3,6 @@ using Drinkable.Domain.Repositories.Base;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Drinkable.Tests.Unit.Mocks.Base
 {
@@ -53,6 +51,11 @@ namespace Drinkable.Tests.Unit.Mocks.Base
         public void DeleteById(TKey id)
         {
             _data.RemoveWhere(x => x.Id.Equals(id));
+        }
+
+        public long Count()
+        {
+            return _data.Count;
         }
     }
 }

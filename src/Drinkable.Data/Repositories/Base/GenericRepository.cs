@@ -1,21 +1,26 @@
 ﻿using Drinkable.Data.Contracts;
 using Drinkable.Domain.Entities.Base;
 using Drinkable.Domain.Repositories.Base;
+using MongoDB.Bson;
+using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
 namespace Drinkable.Data.Repositories.Base
 {
-    public class MongoDbRepository<TEntity> : IRepository<TEntity, string>
+    public class GenericRepository<TEntity> : IRepository<TEntity, string>
          where TEntity : class, IEntity<string>
     {
-        public MongoDbRepository(IMongoDbContext context)
+        public GenericRepository(IMongoDbContext context)
         {
             this.MongoDbContext = context;
+            this.MongoCollection = context.MongoDatabase.GetCollection<TEntity>(typeof(TEntity).Name);
         }
 
         protected IMongoDbContext MongoDbContext { get; set; }
+
+        protected IMongoCollection<TEntity> MongoCollection { get; set; }
 
         public IQueryable<TEntity> Query()
         {
@@ -24,22 +29,22 @@ namespace Drinkable.Data.Repositories.Base
 
         public void Add(TEntity entity)
         {
-            throw new NotImplementedException();
+            this.MongoCollection.InsertOneAsync(entity);
         }
 
         public TEntity Get(TEntity entity)
         {
-            throw new NotImplementedException();
+            return this.GetById(entity.Id);
         }
 
         public TEntity GetById(string id)
         {
-            throw new NotImplementedException();
+            return this.MongoCollection.Find(x => x.Id == id).ToListAsync().Result.FirstOrDefault();
         }
 
         public IEnumerable<TEntity> GetAll()
         {
-            throw new NotImplementedException();
+            return this.MongoCollection.Find(new BsonDocument()).ToListAsync().Result;
         }
 
         public void Update(TEntity entity)
@@ -55,6 +60,11 @@ namespace Drinkable.Data.Repositories.Base
         public void DeleteById(string id)
         {
             throw new NotImplementedException();
+        }
+
+        public long Count()
+        {
+            return this.MongoCollection.CountAsync(new BsonDocument()).Result;
         }
     }
 }
