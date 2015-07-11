@@ -54,6 +54,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Factories\UserFactory.cs" />
     <Compile Include="Mocks\Base\RepositoryMockBase.cs" />
     <Compile Include="Mocks\UserRepositoryMock.cs" />
     <Compile Include="MyFirstXunitTest.cs" />

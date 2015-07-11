@@ -11,5 +11,12 @@ namespace Drinkable.Domain.Entities.Base
         {
             return this.Id.GetHashCode();
         }
+
+        public override bool Equals(object entity)
+        {
+            return entity != null
+                && entity is EntityBase<TKey>
+                && this == (EntityBase<TKey>)entity;
+        }
     }
 }
