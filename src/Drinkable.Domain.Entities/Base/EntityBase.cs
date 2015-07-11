@@ -1,4 +1,4 @@
-﻿namespace Drinkable.Models.Base
+﻿namespace Drinkable.Domain.Entities.Base
 {
     public abstract class EntityBase<TId>
     {

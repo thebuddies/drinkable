@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Drinkable.Models")]
+[assembly: AssemblyTitle("Drinkable.Domain.Entities")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Drinkable.Models")]
+[assembly: AssemblyProduct("Drinkable.Domain.Entities")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("d26be998-28c3-4f18-9f33-a0e544062f88")]
+[assembly: Guid("042f77a4-7e9a-4e5f-8c39-0346c170eea9")]
 
 // Version information for an assembly consists of the following four values:
 //

@@ -1,6 +1,6 @@
-﻿using Drinkable.Models.Base;
+﻿using Drinkable.Domain.Entities.Base;
 
-namespace Drinkable.Models
+namespace Drinkable.Domain.Entities
 {
     public class User : EntityBase<string>
     {
