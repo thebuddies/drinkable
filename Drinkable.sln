@@ -15,8 +15,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drinkable.Web", "src\Drinka
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drinkable.Api", "src\Drinkable.Api\Drinkable.Api.csproj", "{74DF0572-F8DB-418A-8F36-87954D2BB28C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drinkable.Tests", "test\Drinkable.Tests\Drinkable.Tests.csproj", "{C56721D3-4DF5-4E9B-AE93-A05298DE79DB}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drinkable.Domain.Entities", "src\Drinkable.Domain.Entities\Drinkable.Domain.Entities.csproj", "{5012AF0F-6744-4AF6-B392-0E76DABEE47D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drinkable.Domain.Repositories", "src\Drinkable.Domain.Repositories\Drinkable.Domain.Repositories.csproj", "{AD133045-6543-49A8-9DC1-A6B69CFF0B4D}"
@@ -24,6 +22,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drinkable.Domain.Services", "src\Drinkable.Domain.Services\Drinkable.Domain.Services.csproj", "{AF1A07C9-4475-4588-B56E-88B9259B63CB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drinkable.Utilities", "src\Drinkable.Utilities\Drinkable.Utilities.csproj", "{13CC2FA7-BFAA-4B03-A497-DA635F46462E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drinkable.Tests.Unit", "test\Drinkable.Tests.Unit\Drinkable.Tests.Unit.csproj", "{C78DBD86-9626-4ADC-8F5B-DAA9E6CEED27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drinkable.Tests.Integration", "test\Drinkable.Tests.Integration\Drinkable.Tests.Integration.csproj", "{DCCA4A30-BA21-4085-A81F-B825E445DB80}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,10 +57,6 @@ Global
 		{74DF0572-F8DB-418A-8F36-87954D2BB28C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74DF0572-F8DB-418A-8F36-87954D2BB28C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74DF0572-F8DB-418A-8F36-87954D2BB28C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C56721D3-4DF5-4E9B-AE93-A05298DE79DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C56721D3-4DF5-4E9B-AE93-A05298DE79DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C56721D3-4DF5-4E9B-AE93-A05298DE79DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C56721D3-4DF5-4E9B-AE93-A05298DE79DB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5012AF0F-6744-4AF6-B392-0E76DABEE47D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5012AF0F-6744-4AF6-B392-0E76DABEE47D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5012AF0F-6744-4AF6-B392-0E76DABEE47D}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -75,6 +73,14 @@ Global
 		{13CC2FA7-BFAA-4B03-A497-DA635F46462E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13CC2FA7-BFAA-4B03-A497-DA635F46462E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{13CC2FA7-BFAA-4B03-A497-DA635F46462E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C78DBD86-9626-4ADC-8F5B-DAA9E6CEED27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C78DBD86-9626-4ADC-8F5B-DAA9E6CEED27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C78DBD86-9626-4ADC-8F5B-DAA9E6CEED27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C78DBD86-9626-4ADC-8F5B-DAA9E6CEED27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCCA4A30-BA21-4085-A81F-B825E445DB80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCCA4A30-BA21-4085-A81F-B825E445DB80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCCA4A30-BA21-4085-A81F-B825E445DB80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCCA4A30-BA21-4085-A81F-B825E445DB80}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
