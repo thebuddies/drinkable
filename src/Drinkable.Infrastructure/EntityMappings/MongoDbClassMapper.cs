@@ -1,13 +1,14 @@
-﻿using Drinkable.Data.EntityMappings.Base;
+﻿using Drinkable.Infrastructure.Contracts;
+using Drinkable.Infrastructure.EntityMappings.Base;
 using System;
 using System.Linq;
 using System.Reflection;
 
-namespace Drinkable.Data
+namespace Drinkable.Infrastructure.EntityMappings
 {
-    public class MongoDbMappings
+    public class MongoDbClassMapper : IMongoDbClassMapper
     {
-        public void InitialiseMappings()
+        public void InitializeMappings()
         {
             var assembly = Assembly.GetAssembly(typeof(EntityBaseMap));
 

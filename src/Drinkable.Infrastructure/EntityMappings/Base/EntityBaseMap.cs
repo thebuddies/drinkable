@@ -2,7 +2,7 @@
 using MongoDB.Bson.Serialization;
 using MongoDB.Bson.Serialization.IdGenerators;
 
-namespace Drinkable.Data.EntityMappings.Base
+namespace Drinkable.Infrastructure.EntityMappings.Base
 {
     public class EntityBaseMap : MongoDbClassMapperBase<EntityBase<string>>
     {

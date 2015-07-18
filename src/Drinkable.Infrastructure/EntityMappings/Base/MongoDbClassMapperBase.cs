@@ -1,6 +1,6 @@
 ﻿using MongoDB.Bson.Serialization;
 
-namespace Drinkable.Data.EntityMappings.Base
+namespace Drinkable.Infrastructure.EntityMappings.Base
 {
     public abstract class MongoDbClassMapperBase<TEntity>
     {

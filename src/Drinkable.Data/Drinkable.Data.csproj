@@ -52,11 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Contracts\IMongoDbContext.cs" />
-    <Compile Include="EntityMappings\Base\EntityBaseMap.cs" />
-    <Compile Include="EntityMappings\Base\MongoDbClassMapperBase.cs" />
-    <Compile Include="EntityMappings\UserMap.cs" />
     <Compile Include="MongoDbContext.cs" />
-    <Compile Include="MongoDbMappings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\Base\GenericRepository.cs" />
     <Compile Include="Repositories\UserRepository.cs" />
@@ -73,6 +69,10 @@
     <ProjectReference Include="..\Drinkable.Domain.Repositories\Drinkable.Domain.Repositories.csproj">
       <Project>{ad133045-6543-49a8-9dc1-a6b69cff0b4d}</Project>
       <Name>Drinkable.Domain.Repositories</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Drinkable.Infrastructure\Drinkable.Infrastructure.csproj">
+      <Project>{35a86733-f83b-4a35-a526-0d614919fbd1}</Project>
+      <Name>Drinkable.Infrastructure</Name>
     </ProjectReference>
     <ProjectReference Include="..\Drinkable.Utilities\Drinkable.Utilities.csproj">
       <Project>{13cc2fa7-bfaa-4b03-a497-da635f46462e}</Project>

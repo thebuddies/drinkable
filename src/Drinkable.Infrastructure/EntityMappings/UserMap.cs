@@ -1,8 +1,8 @@
-﻿using Drinkable.Data.EntityMappings.Base;
+﻿using Drinkable.Infrastructure.EntityMappings.Base;
 using Drinkable.Domain.Entities;
 using MongoDB.Bson.Serialization;
 
-namespace Drinkable.Data.EntityMappings
+namespace Drinkable.Infrastructure.EntityMappings
 {
     public class UserMap : MongoDbClassMapperBase<User>
     {
